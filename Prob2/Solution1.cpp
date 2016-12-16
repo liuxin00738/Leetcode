@@ -14,31 +14,31 @@ public:
         if(l2==nullptr)  return l1;
 
 	ListNode* result (new ListNode(0));
-        ListNode* resultSaver=result;
+        ListNode* Root=result;
 	int overflow=0;
 	
         while(l1 != nullptr || l2 != nullptr){
-		    int tempSum=0;
-		    tempSum+=overflow;
-		    if(l1  != nullptr) tempSum+=l1->val;
-		    if(l2  != nullptr) tempSum+=l2->val;
+		    int Sum=0;
+		    Sum+=overflow;
+		    if(l1  != nullptr) Sum+=l1->val;
+		    if(l2  != nullptr) Sum+=l2->val;
 
-		    overflow= (tempSum>9)? 1 : 0;
-		    tempSum= (tempSum>9)? (tempSum-10) : tempSum;
+		    overflow= (Sum>9)? 1 : 0;
+		    Sum= (Sum>9)? (Sum-10) : Sum;
 		
-		    ListNode* tempPtr =new ListNode(tempSum);
+		    ListNode* tempPtr =new ListNode(Sum);
 		    result->next=tempPtr;	
 		    result=result->next;
 		    if(l1 != nullptr) l1=l1->next;
 		    if(l2 != nullptr) l2=l2->next;
 	
 	} 
-	// deal with case when need to have one more bit
+	/// deal with case when need to have one more bit
         if(overflow==1){
 		ListNode* tempPtr =new ListNode(overflow);
 		result->next=tempPtr;
 	}
-	return resultSaver->next;
+	return Root->next;
 
     }
     
