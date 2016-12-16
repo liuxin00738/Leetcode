@@ -24,7 +24,7 @@ public:
         
         // search the hash table for solution
         for(int i=0;i<nums.size();i++){
-            if(hashTable.find(target-nums[i]) != hashTable.end()){
+            if(hashTable.find(target-nums[i]) != hashTable.end() && i!= hashTable[target-nums[i]]){
                 result.push_back(i);
                 result.push_back(hashTable[target-nums[i]]);
                 break;
@@ -43,9 +43,12 @@ void simpleTest(){
     vector<int> result;
     
     result=solution.twoSum(nums, target);    
-    if(result.size()>1)
-        cout<<result[0]<<" "<<result[1]<<endl;
+    if(result.size()<2){ 
+        cout<<"no solution"<<endl;
+        return;
+    }
     
+    cout<<result[0]<<" "<<result[1]<<endl;    
     sort(result.begin(), result.end());
     assert(result[0]==answer[0]);
     assert(result[1]==answer[1]);
