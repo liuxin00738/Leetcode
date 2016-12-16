@@ -33,3 +33,14 @@ This adds a destination folder called "origin", which current folder will be pus
 
 9, git push origin master
 add commited file to the cloud master branch, defined by origin.
+
+10, could use ssh for push, this case dont need to input the password everytime
+see this link for update the link
+http://stackoverflow.com/questions/6565357/git-push-requires-username-and-password
+and this link for generating ssh key
+https://help.github.com/articles/generating-an-ssh-key/
+
+
+A common mistake is cloning using the default (HTTPS) instead of SSH. You can correct this by going to your repository, clicking the ssh button left to the URL field and updating the URL of your origin remote like this:
+git remote set-url origin git@github.com:username/repo.git
+

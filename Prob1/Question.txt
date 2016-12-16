@@ -12,4 +12,4 @@ return [0, 1].
 Key point:
 use a hash table
 pay attention to case of 6=3+3, while their is only one 3 in the array
-
+i.e., nums=[3, 4, 5], target =6. Notice there is no solution 
