@@ -38,7 +38,7 @@ public:
 void simpleTest(){
     Solution solution;
     vector<int> nums={2, 7, 11, 15};
-    vector<int> solution={0,1};
+    vector<int> answer={0,1};
     int target=9;
     vector<int> result;
     
@@ -46,9 +46,9 @@ void simpleTest(){
     if(result.size()>1)
         cout<<result[0]<<" "<<result[1]<<endl;
     
-    result.sort(result.begin(), result.end());
-    assert(result[0]==solution[0]);
-    assert(result[1]==solution[1]);
+    sort(result.begin(), result.end());
+    assert(result[0]==answer[0]);
+    assert(result[1]==answer[1]);
 
 }
 int main(int argc, char* argv[]){
