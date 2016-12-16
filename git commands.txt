@@ -3,6 +3,9 @@ This will clone everything into a folder into current folder
 
 2, git pull http://
 This will clone everything directly into current folder
+or use
+git pull origin master
+
 
 3, git status
 obtain the difference between local folder and the cloud folder
