@@ -44,3 +44,12 @@ https://help.github.com/articles/generating-an-ssh-key/
 A common mistake is cloning using the default (HTTPS) instead of SSH. You can correct this by going to your repository, clicking the ssh button left to the URL field and updating the URL of your origin remote like this:
 git remote set-url origin git@github.com:username/repo.git
 
+
+11, on windows, use Git bash, which will open a MINGW64 to allow you do similar things
+
+12, to discard all local commits and pull from cloud, use
+git reset --hard origin/master
+git pull origin master
+
+
+
