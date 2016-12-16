@@ -1,13 +1,20 @@
 1, git clone http://
 This will clone everything into a folder into current folder
+
 2, git pull http://
 This will clone everything directly into current folder
+
 3, git status
 obtain the difference between local folder and the cloud folder
+
 4, git add filename
 add file to be tracked
+git add -A
+This command will add all the files into the folder
+
 5, git commit -m "comments"
 add file to local repository, with comments
+
 6, git config --global user.email "you@example.com"
 This command is used to config the email for your github account
 example:
@@ -20,5 +27,6 @@ git config --global user.name "liuxin00738"
 
 8,  git remote add origin https://github.com/liuxin00738/Leetcode
 This adds a destination folder called "origin", which current folder will be pushed into
+
 9, git push origin master
 add commited file to the cloud master branch, defined by origin.
