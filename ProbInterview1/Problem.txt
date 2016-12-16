@@ -1,0 +1,13 @@
+Coding interview 
+
+Write a C++ program that for a given m by n matrix of 0's and 1's, if any element is 0, sets the entire row and column to 0 in place. 
+
+For example, 
+[0 1 1]
+[1 1 1] 
+change to 
+[0 0 0]
+[0 1 1]
+
+Key part:
+do it in place. This can be done by using two extra labels to indicate if this element is 0 because it originally is 0, or this element is set to 0 because there is one element in its row/column is 0.
