@@ -52,4 +52,11 @@ git reset --hard origin/master
 git pull origin master
 
 
+13, branch related commands
+git branch
+This command will list all branches
+git branch feature1
+This command will create a new branch called feature1
+git checkout feature1
+This command will switch to the feature1 branch
 
