@@ -72,5 +72,8 @@ These two commands will show if there is any updates to the master branch
 git checkout feature1
 git merge master
 
-switch back to feature1 branch, and merge master to the feaute1 branch, fix the conflict
+These two commands will switch back to feature1 branch, and merge master to the feaute1 branch, fix the conflict
+
+After finish the conflict with master branch, push the branch feature1 to cloud, and create a pull request. Wait for review.
+
 
