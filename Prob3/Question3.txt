@@ -7,3 +7,9 @@ Given "abcabcbb", the answer is "abc", which the length is 3.
 Given "bbbbb", the answer is "b", with the length of 1.
 
 Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
+
+
+Key Point
+1, figure out a way to record the old search result
+
+2, use pair<T1,T2>(), instead of make_pair<>(), due to rvalue and lvalue problems
