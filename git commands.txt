@@ -51,7 +51,6 @@ git remote set-url origin git@github.com:username/repo.git
 git reset --hard origin/master
 git pull origin master
 
-
 13, branch related commands
 git branch
 This command will list all branches
@@ -64,19 +63,5 @@ This command will switch to the feature1 branch
 
 14, pull request
 Before creating the pull request, check if anyone has modify the master branch, merge master to current branch
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
