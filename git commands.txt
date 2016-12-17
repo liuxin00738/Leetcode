@@ -77,3 +77,7 @@ These two commands will switch back to feature1 branch, and merge master to the 
 After finish the conflict with master branch, push the branch feature1 to cloud, and create a pull request. Wait for review.
 
 
+15, git remote -v
+This command will show the stored remote IP address.
+
+
