@@ -64,4 +64,13 @@ This command will switch to the feature1 branch
 14, pull request
 Before creating the pull request, check if anyone has modify the master branch, merge master to current branch
 
+git checkout master
+git pull origin master
+
+These two commands will show if there is any updates to the master branch
+
+git checkout feature1
+git merge master
+
+switch back to feature1 branch, and merge master to the feaute1 branch, fix the conflict
 
