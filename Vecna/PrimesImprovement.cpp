@@ -1,17 +1,25 @@
 #include <iostream>
-
+#include <math.h>    
 // This code should print out the prime numbers.
 //
 // Task: Fix and improve the algorithm
+// Fix:
+// Notice that 1 is not a prime number, and a prime number can be divided by 1 and itself
+// So modify line 20 and line 22
+//
+// Improve: see the second part of the code
+// 1, only check odd numbers for numbers bigger than 2
+// 2, check until sqrt(i) because if not prime (i.e., i=a*b), one of a&b will be smaller or equal to sqrt(i)
+// 
 
 int main() {
   std::cout << "Printing primes from 1 to 100" << std::endl;
   int i;
   int j;
   bool prime;
-  for (i = 1; i <= 100; i++) {
+  for (i = 2; i <= 100; i++) { // should begin from 2
     prime = true;
-    for (j = 1; j < i; j++) {
+    for (j = 2; j < i; j++) {  // also should begin from 2
       if (i % j == 0) {
         prime = false; 
       }
@@ -21,5 +29,22 @@ int main() {
     }
   }
   std::cout << std::endl;
+  
+  
+  // a faster algorithm
+  std::cout << 2 << " ";          // out put 2 which is a prime number
+  for (i = 3; i <= 100 ; i=i+2) { // begin from 3, only check odd numbers
+    prime = true;
+    for (j = 3; j <= static_cast<int>(sqrt(i)); j++) {  // check until to the square root
+      if (i % j == 0) {
+        prime = false; 
+      }
+    }
+    if (prime) {
+      std::cout << i << " ";
+    }
+  }
+  std::cout << std::endl;
+
 }
 
