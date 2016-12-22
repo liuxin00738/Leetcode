@@ -8,7 +8,7 @@
 // I Modified line 27, 30, 36
 // provided below:
 // Time complexity is O(n^2) 
-// because (n+n+...+n=n*n
+// because n+n+...+n=n*n
 // Space complexity is O(n)
 
 int main() {

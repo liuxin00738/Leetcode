@@ -11,11 +11,10 @@
 // then discuss the ambiguity in the problem description, and
 // reword it to remove the ambiguity in the space provided below.
 //
-// New Description:
+// ambiguity: should distinguish between lowercase/uppercase, and substring or a complete word
 //
+// New Description: 
 // Count the number of times the lowercase substring "dog" appears in some input text.
-//
-//
 
 int main() {
   std::string input = "The Dogman was no ordinary dog, nor man, but rather a peculiar dog-like man who barked like a dog, and panted like a dog, he even ate like a dog.  He owned a dog named Doglips, and interestingly enough, his favorite food was hotdogs.";

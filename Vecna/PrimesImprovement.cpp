@@ -31,9 +31,9 @@ int main() {
   std::cout << std::endl;  
   
   // a faster algorithm  
-  std::cout << 2 << " ";          // out put 2 which is a prime number
-  std::vector<int>  primeVec={2};
-  for (i = 3; i <= 100 ; i=i+2) { // begin from 3, only check odd numbers
+  std::cout << 2 << " ";          // output 2 which is a prime number
+  std::vector<int>  primeVec={2}; // record find primes in a vector
+  for (i = 3; i <= 100 ; i=i+2) { // begin from 3 and only check odd numbers
     prime = true;
     for (j = 1; j< primeVec.size() && primeVec[j]<= static_cast<int>(sqrt(i)); j++) {  
     // check only prime factors which <= the square root of i
