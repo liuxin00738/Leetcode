@@ -14,3 +14,6 @@ nums2 = [3, 4]
 
 The median is (2 + 3)/2 = 2.5
 
+Key part:
+1, make a good separation of function blocks. In this one, the key is a findKth function
+2, do a binary search in a sorted array is log(n) complexity 
