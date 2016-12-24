@@ -18,15 +18,16 @@
 
 int main() {
   std::string input = "The Dogman was no ordinary dog, nor man, but rather a peculiar dog-like man who barked like a dog, and panted like a dog, he even ate like a dog.  He owned a dog named Doglips, and interestingly enough, his favorite food was hotdogs.";
-  int index = 0;
-  int count = 0;
+  int index = 0; // index of the string to be searched
+  int count = 0; // count the appreanace 
   std::cout << "Counting dogs:";
   do {
     index = input.find("dog",index );
+	// if find "dog"
     if (index != -1) {
       count++;
       std::cout << index << " ";
-      index+=3;
+      index+=3;  // move the index backward by 3 
     }
   } while (index != -1);
   std::cout << std::endl;  
