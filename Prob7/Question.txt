@@ -1,0 +1,9 @@
+7, reverse interger
+Reverse digits of an integer.
+
+Example1: x = 123, return 321
+Example2: x = -123, return -321
+
+key:
+overflow of integer
+using long int instead
