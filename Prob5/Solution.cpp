@@ -3,7 +3,50 @@ public:
     string longestPalindrome(string s) {
         string result;
         if(s.size()==0) return result;
-        result=method2(s);
+        result=method3(s);
+        return result;
+    }
+    
+    // manarch's method
+    string method3(string& s){
+        
+        // preprocess s
+        string sp;
+        for(int i=0;i<s.size();i++){
+            sp+='#';
+            sp+=s[i];
+        }
+        sp+='#';
+        
+        vector<int> p(sp.size(), 0);
+        p[0]=1;
+        //cout<<1<<" ";
+        int mx=0;  // most right edge
+        int idx=0; // center of most right edge
+        for(int i=1;i<sp.size();i++){
+            // if mx>i, choose between the two value: right edge, or left mirror's value 
+            p[i]= mx>i? min(p[2*idx-mx], mx-i) : 1;
+            // keep extending to both direction
+            while( i-p[i]>=0 && i+p[i]< sp.size() && sp[i+p[i]]== sp[i-p[i]] ) p[i]++;
+            //cout<<p[i]<<" ";
+            // update mx and idx
+            if(i+p[i]-1 > mx){
+                mx=i+p[i]-1;
+                idx=i;
+            }       
+        }
+        //cout<<endl;
+        int maxLengthIdx=0;
+        for(int i=0;i<p.size();i++)
+            maxLengthIdx= p[maxLengthIdx]>p[i]? maxLengthIdx : i;
+        
+        string result;
+        int stringLength=p[maxLengthIdx]-1;
+        int centerIdx=maxLengthIdx/2;
+        int leftIdx=centerIdx-stringLength/2;
+        //cout<<"left is "<<leftIdx<<"length is "<< stringLength<<endl;
+        result=s.substr(leftIdx, stringLength);
+        
         return result;
     }
     
