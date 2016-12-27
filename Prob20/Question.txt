@@ -1,0 +1,15 @@
+20. Valid Parentheses 
+Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
+
+Key point:
+use a stack
+
+recall switch(){
+	case 1:   break;
+	case 2:   break;
+	default:  break;
+	
+	}
+
