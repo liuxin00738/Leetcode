@@ -2,3 +2,6 @@
 Given a roman numeral, convert it to an integer.
 
 Input is guaranteed to be within the range from 1 to 3999.
+
+Key point:
+easy, check next char to figure out if should add or subtract char from the sum.
