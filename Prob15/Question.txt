@@ -12,7 +12,10 @@ A solution set is:
 ]
 
 Key point:
+I use hash table to realize it, with space complecity as O(n)
 use two sum as a sub function.
 use a unique vec to prevent repeat: only search unique element once.
 
-Could do a recursive call: findKsum.
+Could use a left-right two-pointer method, time complexity is the same, but save space.
+
+Related to find k-sum problem.
