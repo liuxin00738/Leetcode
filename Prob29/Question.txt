@@ -1,0 +1,20 @@
+29. Divide Two Integers
+Divide two integers without using multiplication, division and mod operator.
+
+If it is overflow, return MAX_INT.
+
+key point:
+use sum and abstract to do the joint
+a, 2a, 4a, 8a, 16a, basically a binary search.
+map has implement a binary search tree, which can search lower bound.
+
+abs() has overflow problem.
+
+
+Time complexity: k log k, where k=log(a/b)
+1, create the map:
+element number is k=log(a/b)
+build the tree is k long k
+
+2, do a k step search, 
+k log k
