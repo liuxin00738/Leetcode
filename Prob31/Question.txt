@@ -15,3 +15,4 @@ from backward to forward, find the first index where the left is small than the 
 This indicates that we can make it bigger.
 Then swap the left of the index with the minimal number on the right that is bigger than the left
 Then sort the rest.
+do a heap sort in place to satisfy the requirement.
