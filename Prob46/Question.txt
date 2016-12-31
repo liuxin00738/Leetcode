@@ -1,0 +1,18 @@
+46. Permutations  
+Given a collection of distinct numbers, return all possible permutations.
+
+For example,
+[1,2,3] have the following permutations:
+[
+  [1,2,3],
+  [1,3,2],
+  [2,1,3],
+  [2,3,1],
+  [3,1,2],
+  [3,2,1]
+]
+
+key point:
+use recursive method.
+obtain result for 0:k
+for 0:k+1, insert the new elements at different positions (k+1 new positions).
