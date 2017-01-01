@@ -1,0 +1,6 @@
+50. Pow(x, n)   
+Implement pow(x, n).
+
+Key point:
+use binary search and save middle result to speed up the calculation
+be careful of the overflow of int
