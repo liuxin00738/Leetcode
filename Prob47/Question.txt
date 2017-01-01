@@ -15,3 +15,6 @@ Key point:
 2, use a vector to record if a number has been used, and which level it is on.
 3, think it as  a tree: when there are repeate elements, only insert one in each level
 
+
+http://www.cnblogs.com/grandyang/p/4359825.html
+
