@@ -1,0 +1,17 @@
+47. Permutations II  
+Given a collection of numbers that might contain duplicates, return all possible unique permutations.
+
+For example,
+[1,1,2] have the following unique permutations:
+[
+  [1,1,2],
+  [1,2,1],
+  [2,1,1]
+]
+
+
+Key point:
+1, do a DFS search, do it recursively
+2, use a vector to record if a number has been used, and which level it is on.
+3, think it as  a tree: when there are repeate elements, only insert one in each level
+

@@ -16,3 +16,11 @@ key point:
 use recursive method.
 obtain result for 0:k
 for 0:k+1, insert the new elements at different positions (k+1 new positions).
+
+
+Use DFS search and do it recursively: use one vector to record the position that has been used.
+
+
+a new method is:
+each time swap the position, then do recursive calls.
+http://www.cnblogs.com/grandyang/p/4358848.html
