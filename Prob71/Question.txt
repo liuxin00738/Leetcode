@@ -1,0 +1,11 @@
+71. Simplify Path    
+Given an absolute path for a file (Unix-style), simplify it.
+
+For example,
+path = "/home/", => "/home"
+path = "/a/./b/../../c/", => "/c"
+
+Key point:
+1, try to use stringstream and getline with delimer
+2, get the logic right
+3, difficult for me
