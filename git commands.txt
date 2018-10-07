@@ -6,7 +6,6 @@ This will clone everything directly into current folder
 or use
 git pull origin master
 
-
 3, git status
 obtain the difference between local folder and the cloud folder
 
